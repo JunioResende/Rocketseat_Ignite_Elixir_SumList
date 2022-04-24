@@ -1,18 +1,9 @@
 defmodule SumList do
-  @moduledoc """
-  Documentation for `SumList`.
-  """
+  def sum([], acc) do
+    0
+  end
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> SumList.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def sum([head | tail] = list, acc) do
+    list
   end
 end
